@@ -13,5 +13,5 @@ me.addEventListener("mouseover", function(){
 	statement.style.opacity = 1.0;
 });
 staircase.addEventListener("mouseover", function(){
-	window.location.href = "portfolioIndex.html";
+	window.location.href = "index.html";
 });

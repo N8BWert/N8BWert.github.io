@@ -24,7 +24,7 @@ var javascript = document.getElementById("javascript");
 var htmlspeach = document.getElementById("htmlspeach");
 
 staircase.addEventListener("mouseover", function(){
-	window.location.href = "portfolioIndex.html";
+	window.location.href = "index.html";
 });
 cSharp.addEventListener("mouseover", function(){
 	cSharpText.style.opacity = 1.0;

@@ -11,7 +11,7 @@ var pigtathlonText = document.getElementById("pigtathlonDescription");
 var error404Text = document.getElementById("error404Description");
 
 staircase.addEventListener("mouseover", function(){
-	window.location.href = "portfolioIndex.html";
+	window.location.href = "index.html";
 });
 pig.addEventListener("mouseover", function(){
 	pigtathlonText.style.opacity = 1.0;
