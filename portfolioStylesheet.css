@@ -1,0 +1,286 @@
+.container{
+	background-image: url("homepagebackground.png");
+	background-color: black;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	align-items: baseline;
+}
+.staircase{
+	position: relative;
+	top: 14%;
+	left: 10px;
+}
+.links{
+	position: fixed;
+	bottom: 3%;
+	right: 10%;
+}
+#Enemy1{
+	position: absolute;
+	animation-name: move1;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes move1{
+	0%{top: 36%; left: 23%;}
+	50%{top: 27%; left: 28%;}
+	100%{top: 36%; left: 23%;}
+}
+#Enemy2{
+	position: absolute;
+	animation-name: move2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes move2{
+	0%{top: 37%; right: 25%}
+	50%{top: 27%; right: 30%}
+	100%{top: 37%; right: 25%}
+}
+#Enemy3{
+	position: absolute;
+	top: 36%;
+	animation-name: move3;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes move3{
+	0%{left: 51%;}
+	50%{left: 44%;}
+	100%{left: 51%;}
+}
+#Enemy4{
+	position: absolute;
+	animation-name: move4;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes move4{
+	0%{top: 36%; right: 34%;}
+	50%{top: 47%; right: 28%;}
+	100%{top: 36%; right: 34%;}
+}
+#Enemy5{
+	position: absolute;
+	animation-name: move5;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes move5{
+	0%{top: 37%; left: 33%;}
+	50%{top: 46%; left: 26%;}
+	100%{top: 37%; left: 33%;}
+}
+#Enemy6{
+	position: absolute;
+	bottom: 44%;
+	animation-name: move6;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes move6{
+	0%{left: 44%;}
+	50%{left: 51%;}
+	100%{left: 44%;}
+}
+#Enemy7{
+	position: absolute;
+	animation-name: move7;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes move7{
+	0%{bottom: 39%; left: 30%;}
+	50%{bottom: 49%; left: 37%;}
+	100%{bottom: 39%; left: 30%;}
+}
+#Enemy8{
+	position: absolute;
+	animation-name: move8;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes move8{
+	0%{bottom: 39%; right: 32%;}
+	50%{bottom: 50%; right: 38%;}
+	100%{bottom: 39%; right: 32%;}
+}
+.Player{
+	position: absolute;
+}
+#restartButton{
+	position: absolute;
+	bottom: 13%;
+	right: 47%;
+	width: 100px;
+}
+.collider{
+	opacity: 0.0;
+}
+#topRightCollider{
+	position: absolute;
+	bottom: 45%;
+	right: 8%;
+	width: 15%;
+}
+#topLeftCollider{
+	position: absolute;
+	bottom: 25%;
+	left: 8%;
+	width: 12%;
+}
+#bottomRightCollider{
+	position: absolute;
+	bottom: 0%;
+	right: 5%;
+	width: 35%;
+}
+#bottomLeftCollider{
+	position: absolute;
+	bottom: 0%;
+	left: 7%;
+	width: 31%;
+}
+#aboutBackground{
+	background-image: url("aboutMe.png");
+	background-color: black;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#aboutStaircase{
+	position: absolute;
+	bottom: 5%;
+	left: 45%;
+}
+#Me{
+	position: absolute;
+	top: 27%;
+	left: 25%;
+}
+#aboutMeStatement{
+	position: absolute;
+	top: 2%;
+	left: 25%;
+	width: 50%;
+	opacity: 0.0;
+}
+#projectsBackground{
+	background-image: url("projects.png");
+	background-color: black;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#languagesBackground{
+	background-image: url("languages.png");
+	background-color: black;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#bacteria{
+	position: absolute;
+	top: 32%;
+	left: 22%;
+}
+#pig{
+	position: absolute;
+	top: 32%;
+	right: 25%;
+}
+#pigtathlonDescription{
+	position: absolute;
+	top: 5%;
+	left: 20%;
+	width: 50%;
+	opacity: 0.0;
+}
+#error404Description{
+	position: absolute;
+	top: 5%;
+	left: 21%;
+	width: 50%;
+	opacity: 0.0;
+}
+#cs{
+	position: absolute;
+	top: 7%;
+	left: 20%;
+}
+#unity{
+	position: absolute;
+	top: 26%;
+	left: 22%;
+}
+#github{
+	position: absolute;
+	top: 32%;
+	left: 30%;
+}
+#python{
+	position: absolute;
+	top: 32%;
+	right: 33%;
+}
+#html{
+	position: absolute;
+	top: 7%;
+	right: 20%;
+}
+#css{
+	position: absolute;
+	top: 12%;
+	right: 27%;
+}
+#javascript{
+	position: absolute;
+	top: 26%;
+	right: 22%;
+}
+#csharpspeach{
+	position: absolute;
+	top: 7%;
+	left: 27%;
+	width: 40%;
+	opacity: 0.0;
+}
+#unityspeach{
+	position: absolute;
+	top: 12%;
+	left: 27%;
+	width: 40%;
+	opacity: 0.0;
+}
+#githubspeach{
+	position: absolute;
+	top: 14%;
+	left: 30%;
+	width: 35%;
+	opacity: 0.0;
+}
+#pythonspeach{
+	position: absolute;
+	top: 10%;
+	left: 28%;
+	width: 40%;
+	opacity: 0.0;
+}
+#htmlspeach{
+	position: absolute;
+	top: 13%;
+	left: 26%;
+	width: 40%;
+	opacity: 0.0;
+}
