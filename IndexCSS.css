@@ -1,0 +1,59 @@
+#my_name{
+	position: relative;
+	top: 150px;
+	margin: auto;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	font-family: Consolas, monaco, monospace;
+	font-size: 100%;
+}
+#my_description{
+	position: relative;
+	top: 125px;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	font-family: Consolas, monaco, monospace;
+	font-size: 100%;
+}
+.flex-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.flex-item{
+	position: relative;
+	top: 175px;
+	text-family: Consolas, monaco, monospace;
+	font-size: 150%;
+	text-align: center;
+}
+#my_social{
+	position: fixed;
+	bottom: 0%;
+	left: 5%;
+	font-size: 200%;
+	text-family: Consolas, monaco, monospace;
+	/*color: #ffff00;*/
+}
+.links{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+}
+#indeed{
+	border-radius: 10px;
+}
+.animation-area{
+	background: linear-gradient(to left, #8942a8, #ba382f);
+	width: 99%;
+	height: 108%;
+}
+body{
+	background: black;
+	width: 99%;
+	height: 90%;
+}

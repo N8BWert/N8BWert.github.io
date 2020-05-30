@@ -1,62 +1,52 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="Nathaniel Wert's Video Game Design Portfolio">
+		<Title>Nathaniel Wert's Portfolio</Title>
+		<meta name="description" content="Nathaniel Wert's developer portfolio">
+		<meta name="keywords" content="Nathaniel Wert, portfolio, developer, dev">
 		<meta name="author" content="Nathaniel Wert">
-		<meta name="keywords" content="Game Design, Game Dev, Portfolio, Nate Wert">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Nate Wert's Portfolio</title>
-		<link rel="stylesheet" href="portfolioStylesheet.css"/>
+		<link rel="stylesheet" href="IndexCSS.css">
 	</head>
 	<body>
-		<header style="background-color: black">
-		
-		</header>
 		<main>
-			<div class="flex-container container">
-				<div id="leftStaircase" class="staircase flex-item"><img src="stairs.png" alt="staircase" width="70%"></div>
-				<div id="centerStaircase" class="staircase flex-item"><img src="stairs.png" alt="staircase" width="70%"></div>
-				<div id="rightStaircase" class="staircase flex-item"><img src="stairs.png" alt="staircase" width="70%"></div>
+			<div class="animation-area">
+				<div id="my_name"><b><h1>Console.WriteLine("Hello, I'm Nate.")</h1></b></div>
+				<div id="my_description"><b><h2>I'm a Junior Developer and Prospective Data Scientist.</h2></b></div>
+				<div class="flex-box">
+					<div class="flex-item"><a href="About.html"><img src="about_me.png" alt="about" width="30"></a></div>
+					<div class="flex-item"><a href="Skills.html"><img src="skills.png" alt="skills" width="30"></a></div>
+					<div class="flex-item"><a href="Projects.html"><img src="projects.png" alt="projects" width="30"></a></div>
+					<div class="flex-item"><a href="Contacts.html"><img src="contact.png" alt="contacts" width="30"></a></div>
+				</div>
 			</div>
-			<div class="Enemy" id="Enemy1"><img src="Enemy.png" alt="Enemy" width="80%"></div>
-			<div class="Enemy" id="Enemy2"><img src="Enemy.png" alt="Enemy" width="80%"></div>
-			<div class="Enemy" id="Enemy3"><img src="Enemy.png" alt="Enemy" width="80%"></div>
-			<div class="Enemy" id="Enemy4"><img src="Enemy.png" alt="Enemy" width="80%"></div>
-			<div class="Enemy" id="Enemy5"><img src="Enemy.png" alt="Enemy" width="80%"></div>
-			<div class="Enemy" id="Enemy6"><img src="Enemy.png" alt="Enemy" width="80%"></div>
-			<div class="Enemy" id="Enemy7"><img src="Enemy.png" alt="Enemy" width="80%"></div>
-			<div class="Enemy" id="Enemy8"><img src="Enemy.png" alt="Enemy" width="80%"></div>
-			<img id="Player" class="Player" src="Player.png" alt="Player">
-			<img id="restartButton" src="Restart.png" alt="restart-button"> 
-			<img id="topLeftCollider" class="collider" src="topLeftCollider.png">
-			<img id="bottomLeftCollider" class="collider" src="bottomLeftCollider.png">
-			<img id="topRightCollider" class="collider" src="topRightCollider.png">
-			<img id="bottomRightCollider" class="collider" src="bottomRightCollider.png">
 		</main>
 		<footer>
+			<span id="my_social"><h3><b>Socials:</b></h3></span>
 			<div>
 				<table class="links">
 					<tbody>
-						<td>
-							<a href="https://github.com/N8BWert">
-								<img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="GitHub Link" width="60">
-							</a>
-						</td>
-						<td>
-							<a href="https://my.indeed.com/p/nathanielw-6q7ev5p">
-								<img src="https://i2.wp.com/iaccessibility.net/wp-content/uploads/2018/04/indeed-employer-logo.png?ssl=1" alt="Indeed Link" width="60">
-							</a>
-						<td>
-							<a href="https://lunarlessstudios.itch.io/">
-								<img src="https://static.itch.io/images/itchio-textless-black.svg" alt="itch.io Link" width="60">
-							</a>
-						</td>
-						<!--Make sure to add Linkdin Link when you get one-->
+						<tr>
+							<td>
+								<a href="https://github.com/N8BWert">
+									<img src="github_logo.svg" alt="github link" width="60">
+								</a>
+							</td>
+							<td>
+								<a href="https://my.indeed.com/p/nathanielw-6q7ev5p">
+									<img src="indeed_logo.png" alt="indeed link" width="60" id="indeed">
+								</a>
+							</td>
+							<td>
+								<a href="https://lunarlessstudios.itch.io/">
+									<img src="itch_logo.svg" alt="itch.io link" width="60">
+								</a>
+							</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
+			</span>
 		</footer>
-		<script src="jquery-3.5.1.min.js"></script>
-		<script src="portfolioJavascript.js"></script>
 	</body>
 </html>
