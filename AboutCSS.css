@@ -1,0 +1,25 @@
+#about_section{
+	position: relative;
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-top: 35px;
+	text-family: Consolas, monaco, monospace;
+}
+#my_social{
+	position: fixed;
+	bottom: 0%;
+	left: 5%;
+	font-size: 200%;
+	text-family: Consolas, monaco, monospace;
+	/*color: #ffff00;*/
+}
+.links{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+}
+body{
+	background: linear-gradient(to left, #8942a8, #ba382f);
+	width: 99%;
+	height: 90%;
+}

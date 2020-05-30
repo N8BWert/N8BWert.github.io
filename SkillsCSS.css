@@ -1,0 +1,31 @@
+#skills{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 100px;
+}
+#my_social{
+	position: fixed;
+	bottom: 0%;
+	left: 5%;
+	font-size: 200%;
+	text-family: Consolas, monaco, monospace;
+	/*color: #ffff00;*/
+}
+.links{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+}
+.skill{
+	font-size: 150%;
+	text-family: Consolas, monaco, monospace;
+}
+.description{
+	font-size: 100%;
+	text-family: Consolas, monaco, monospace;
+}
+body{
+	background: linear-gradient(to left, #8942a8, #ba382f);
+	width: 99%;
+	height: 90%;
+}
