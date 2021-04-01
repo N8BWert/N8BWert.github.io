@@ -3,7 +3,7 @@
 	bottom: 0%;
 	left: 5%;
 	font-size: 200%;
-	text-family: Consolas, monaco, monospace;
+	font-family: Consolas, monaco, monospace;
 	/*color: #ffff00;*/
 }
 .links{
@@ -12,7 +12,7 @@
 	right: 5%;
 }
 body{
-	background: linear-gradient(to left, #8942a8, #ba382f);
+	background: #121212;
 	width: 99%;
 	height: 90%;
 }
@@ -27,4 +27,22 @@ body{
 	padding-right: 50px;
 	padding-top: 25px;
 	padding-bottom: 100px;
+}
+h1 {
+	font-family: Consolas, Monaco, Monospace;
+	color: #FFFFFF;
+	opacity: 0.87;
+	position: fixed;
+	top: 25px;
+	left: 40%;
+}
+#back {
+	padding: 25px 25px 25px 25px;
+}
+th {
+	text-align: left;
+	font-size: 150%;
+	font-family: Consolas, monaco, monospace;
+	color: #ffa48e;
+	padding-left: 25px;
 }
