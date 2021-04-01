@@ -1,25 +1,44 @@
 #about_section{
+	color: #ffa48e;
+	opacity: 0.6;
 	position: relative;
-	padding-left: 75px;
-	padding-right: 75px;
+	padding-left: 100px;
+	padding-right: 100px;
 	padding-top: 35px;
-	text-family: Consolas, monaco, monospace;
+	font-size: 20;
+	font-family: Consolas, Monaco, Monospace;
 }
 #my_social{
 	position: fixed;
 	bottom: 0%;
 	left: 5%;
 	font-size: 200%;
-	text-family: Consolas, monaco, monospace;
-	/*color: #ffff00;*/
+	font-family: Consolas, Monaco, Monospace;
 }
 .links{
 	position: fixed;
 	bottom: 5%;
 	right: 5%;
 }
+#back {
+	padding: 25px 25px 25px 25px;
+}
+#portfolio {
+	color: #ffa48e;
+}
 body{
-	background: linear-gradient(to left, #8942a8, #ba382f);
+	background: #121212;
 	width: 99%;
 	height: 90%;
+}
+h1 {
+	font-family: Consolas, Monaco, Monospace;
+	color: #FFFFFF;
+	opacity: 0.87;
+	position: fixed;
+	top: 25px;
+	left: 40%;
+}
+#indeed{
+	border-radius: 10px;
 }
