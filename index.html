@@ -1,56 +1,219 @@
-<html>
-	<head>
+<!doctype html>
+<html lang="en">
+    <head>
+        <Title>Nathaniel Wert's Portfolio</Title>
 		<meta charset="UTF-8">
-		<Title>Nathaniel Wert's Portfolio</Title>
-		<meta name="description" content="Nathaniel Wert's developer portfolio">
-		<meta name="keywords" content="Nathaniel Wert, portfolio, developer, dev">
+		<meta name="description" content="Nathaniel Wert's Projects">
+		<meta name="keywords" content="Nathaniel Wert, portfolio, developer, dev, projects">
 		<meta name="author" content="Nathaniel Wert">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="IndexCSS.css">
-	</head>
-	<body>
-		<main>
-			<div class="animation-area">
-				<div id="my_name"><b><h1>Hello, my name is Nathaniel Wert</h1></b></div>
-				<div id="my_description"><b><h2>I'm a prospective Software Engineer who loves learning to build tomorrow's technology</h2></b></div>
-				<div class="flex-box">
-					<div class="flex-item"><a href="About.html"><img src="about_me.png" alt="about" width="30"></a></div>
-					<div class="flex-item"><a href="Skills.html"><img src="skills.png" alt="skills" width="30"></a></div>
-					<div class="flex-item"><a href="Projects.html"><img src="projects.png" alt="projects" width="30"></a></div>
-					<div class="flex-item"><a href="Contacts.html"><img src="contact.png" alt="contacts" width="30"></a></div>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Header -->
+        <h1 style="padding: 100px 20px 10px 20px;"><p class="text-center">Nathaniel Wert</p></h1>
+        <h3 style="padding: 10px 20px 50px 20px"><p class="text-center">Hi I'm Nate.  I like to make things.</p></h3>
+        <hr>
+        <!-- Intro -->
+        <h3 style="padding: 30px"><p class="text-center">As a developer I believe that the best way to learn is to do.  Therefore, I try to keep myself busy with using new tools and technologies to create things that interest me.</p></h3>
+        <h5 style="padding: 20px"><p class="text-center">Current, I am working on a <b>Raspberry Pi Pico Looper Pedal using RTIC</b></p></h5>
+        <!-- Projects -->
+        <div class="card-columns">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">NComm</h5>
+                    <p class="card-text">
+                        Every time that I work with Ros I complain about how inefficient and odd the communication methods are.  Every time 
+                        Ros sends a message it has to serialize the message in some way that it can be read by both python and c++ and then it literally 
+                        sends the data over LAN.  Honestly, this takes forever and is super inefficient just so that people can write their high level 
+                        algorithms in python.
+                        <br>
+                        **stepping off of my soapbox**
+                        <br>
+                        Anyways, NComm is a solution to Ros's slow message passing.  The idea with NComm is to utilize nodes that each have a setup, update,
+                        and shutdown function and perform in immediate mode (basically every node has an update rate and will run their update code during that
+                        time).  Then, I can easily use modern message sharing (specifically channels) to share rust-native types across nodes to allow for 
+                        incredibly fast message passing performance.
+                        <br><br>
+                        TLDR: Ros is super inefficient about passing messages so I made a communication library for Nodes in rust to do what Ros does,
+                        but significantly better.
+                    </p>
+                    <a href="link-to-project" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Rocket Large File Storage</h5>
+                    <p class="card-text">
+                        As a proof of concept, I created a static large file storage system using the Rust Rocket framework.  The experience was enjoyable
+                        and has led to me considering using the basic template of this application for any future large file storage projects I need.
+                    </p>
+                    <a href="https://github.com/N8BWert/rocket-lfs" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Super Knee</h5>
+                    <p class="card-text">
+                        For the second Georgia Tech IEEE Robotech hackathon, my team attempted to create an assistive knee brace to help with knee joint 
+                        mobility.  The project did end up being a bit of a hot mess with the raspberry pi pico we were using breaking before our demo wiping 
+                        all of our code.  The links below are to the flask server that served comm streamed accelerometer data to an IOS app.
+                    </p>
+                    <a href="https://github.com/N8BWert/assisted-knee-brace-embed/tree/main" class="btn btn-primary">Attempted Rust Firmware</a>
+                    <a href="https://github.com/N8BWert/SuperKnee_IOS" class="btn btn-primary">IOS App</a>
+                    <a href="https://github.com/N8BWert/SuperKnee-Flask" class="btn btn-primary">Flask Server</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/scorecard.png" class="card-img-top w-25 mx-auto" alt="OSSF Scorecard">
+                <div class="card-body">
+                    <h5 class="card-title">Scorecard (GitLab Client)</h5>
+                    <p class="card-text">
+                        Another project I completed during my time at Kudelski Security was a contribution to the open-source ossf scorecard project. 
+                        My main contribution to Scorecard was a GitLab client that added a new platform for scorecard to work with.  This was my first 
+                        time contributing significantly to a massive open source project so I was incredibly surprised when my work won a 
+                        Google open-source peer-bonus award.
+                    </p>
+                    <a href="https://github.com/ossf/scorecard" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">RC4-Plaintext Attack</h5>
+                    <p class="card-text">
+                        As a small(er) side project at my Software Engineering Co-Op (Kudelski Security), I made a rust program to run a plaintext attack against the rc4 stream cipher.  The project
+                        started off in C, but I thought it would be fun to try my hand at a programming language I had never used before (rust) so that I could utilize the full concurrency of my
+                        computer.  After adding in multithreading I also thought it would be interesting to write a CUDA kernel to use a CUDA-enabled GPU to run the plaintext attack against cr4 for
+                        specific key sizes.  I would definitely not consider myself an expert with CUDA kernel programming, however I did manage to mess up my computers graphics driver the first time
+                        I ran my CUDA-enabled code, which I would consider a huge win.
+                    </p>
+                    <a href="https://github.com/N8BWert/rc4-plaintext" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/mushroom_robot.jpeg" class="card-img-top w-25 mx-auto" alt="Mushroom Farming Robot">
+                <div class="card-body">
+                    <h5 class="card-title">Pleurotus-Ostreatus-Automaton (POA)</h5>
+                    <p class="card-text">
+                        Did you know you could pretty easily grow oyster mushrooms from pretty much any bucket.  Neither did I, before I began this project.  As part of Georgia Tech's IEEE
+                        robotics hackathon (robotech), I worked with a team to create an automatic mushroom farming robot.  The principle was that oyster mushrooms tend to grow horizontally 
+                        out of buckets when they are provided the right conditions.  This makes it pretty easy to design a large spinning blade that harvests the mushrooms when they are fully
+                        grown.
+                        <br><br>
+                        Overall, this is one of my favorite projects I've ever worked on.  In the future, there is a very high likelihood of me taking this concept back out of the garage and
+                        creating a (possibly) open-sourced fully-working version that uses my NComm framework to allow for mesh network of IoT farming robots.
+                    </p>
+                    <a href="https://github.com/N8BWert/Pleurotus-Ostreatus-Automaton" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/search_and_rescue_sum.png" class="card-img-top w-25 mx-auto" alt="Search and Rescue Sim">
+                <div class="card-body">
+                    <h5 class="card-title">Search and Rescue Simulator</h5>
+                    <p class="card-text">
+                        Freshman year of college I was apart of the Georgia Tech Living Learning Community Grand Challenges.  In Grand Challenges, the main goal of the class
+                        was to attempt to develop some solution to a major problem.  My team interviewed a large number (I think 15 but I don't 100% remember) of individuals and 
+                        organizations involved in hurricane search and rescue.  Throughout the process we realized that communication between NGOs, base camp, first responders,
+                        the state and local government, and survivors was heavily lacking following a major disaster.  This project was a (very) rough simulation I developed to simulate the different
+                        levels of efficiency for search and rescue assuming base camp notified first responders of the location of a survivor at specific intervals.
+                        <br><br>
+                        In general, looking back at the simulation.  It is a bit week and makes quiet a few large assumptions regarding the search and rescue patterns of first responders
+                        but it, nonetheless, was a pretty interesting project created.
+                    </p>
+                    <a href="https://github.com/N8BWert/SearchAndRescueSim_1.0/tree/master" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/fallacy.jpg" class="card-img-top w-25 mx-auto" alt="Fallacy Game">
+                <div class="card-body">
+                    <h5 class="card-title">Fallacy</h5>
+                    <p class="card-text">
+                        Fallacy was a project for the Brackeys 2022.1 game jam that I completed with one of my roommates.  Overall, the game didn't turn out
+                        too bad, but it also wasn't the greatest game I've ever made (I still hold that my best game was error 404).
+                    </p>
+                    <a href="https://lunarlessstudios.itch.io/fallacy" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/informeal_snapshot.jpg" class="card-img-top w-25 mx-auto" alt="InForMeal App">
+                <div class="card-body">
+                    <h5 class="card-title">InForMeal</h5>
+                    <p class="card-text">
+                        In 2021, I participated in HackGT 8 at Georgia Tech.  For the project my team worked on an application to allow users to 
+                        answer poll questions at the dinning halls to help get more up-to-date information regarding the contents of the Georgia Tech 
+                        Dining Halls.  I participated as the primary backend developer for the team where I used a consensus algorithm to weight user
+                        input to obtain a semi-accurate picture of what is at the dinning halls at a specific moment.
+                    </p>
+                    <a href="https://github.com/JamesEConnor/InForMeal" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/LEA.JPG" class="card-img-top w-25 mx-auto" alt="LEA Robot">
+                <div class="card-body">
+                    <h5 class="card-title">LEA (Law Enforcement Assistant)</h5>
+                    <p class="card-text">
+                        Back in High School I participated in a competition to develop some technology to solve an issue.  I choose to focus on assisting
+                        police officers to safely navigate traffic stops.  Overall, the project was relatively competent, but had a severe lack of mobility
+                        and was a bit boxy.  In the future I might make a version 2 of this project using the knowledge I've gained since I created this project.
+                        <br><br>
+                        Unfortunately, it looks like I have lost the original project url :(
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ToTheStars.png" class="card-img-top w-25 mx-auto" alt="To The Stars Game">
+                <div class="card-body">
+                    <h5 class="card-title">To The Stars</h5>
+                    <p class="card-text">
+                        For a space-themed game jam I created a little game where you controlled a pack of evolving creatures to fight enemies and reach a
+                        spaceship.  Looking back, this project seems a lot more like Pikmin than I remember it being, but it was a fun game to make.  Plus I
+                        placed 8th overall, which isn't too bad
+                    </p>
+                    <a href="https://lunarlessstudios.itch.io/to-the-stars" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/AmI1cr.png" class="card-img-top w-25 mx-auto" alt="Break The Cycle Game">
+                <div class="card-body">
+                    <h5 class="card-title">Break The Cycle</h5>
+                    <p class="card-text">
+                        I know what you're probably thinking.  Why on Earth does this look so much worse than your first game.  Well the reason
+                        for that is I completed this game for the 47th Ludum Dare Game Jam but had to work both the Friday and Sunday of the jam
+                        meaning I didn't exactly have a ton of time.  I did, however, finish a game during the small amount of time I had and, although
+                        it definitely doesn't look or play great, am relatively proud of the game.
+                    </p>
+                    <a href="https://lunarlessstudios.itch.io/break-the-cycle" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/error404.png" class="card-img-top w-25 mx-auto" alt="Error 404 Game">
+                <div class="card-body">
+                    <h5 class="card-title">ERROR 404: The Game</h5>
+                    <p class="card-text">
+                        My first game jam game.  What can I say.  It was an incredibly fun experience creating this game as a part of
+                        Ludum Dare 46.  Looking back, a bit of the game was a little sketchy and the audio fading could use some work.
+                        But honestly, I'm still pretty proud of this being my first game jam game.
+                    </p>
+                    <a href="https://lunarlessstudios.itch.io/error-404" class="btn btn-primary">Project Link</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+		<div class="container my-5">
+			<footer class="text-center text-lg-start">
+				<div class="container d-flex justify-content-center py-5">
+					<a href="https://github.com/N8BWert" style="padding: 20px">
+						<img src="images/github.png" alt="github link" width="60">
+					</a>
+					<a href="https://www.linkedin.com/in/nathaniel-wert-1275811a9/" style="padding: 20px">
+						<img src="images/linkedin.png" alt="LinkedIn link" width="60">
+					</a>
+					<a href="NathanielWert_Resume.pdf" style="padding: 20px">
+						<img src="images/resume.png" alt="Resume Link" width="60">
+					</a>
 				</div>
-			</div>
-		</main>
-		<footer>
-			<div>
-				<table class="links">
-					<tbody>
-						<tr>
-							<td>
-								<a href="https://github.com/N8BWert">
-									<img src="github_logo.png" alt="github link" width="60">
-								</a>
-							</td>
-							<td>
-								<a href="https://my.indeed.com/p/nathanielw-6q7ev5p">
-									<img src="indeed_logo.png" alt="indeed link" width="60" id="indeed">
-								</a>
-							</td>
-							<td>
-								<a href="https://lunarlessstudios.itch.io/">
-									<img src="itch_logo.png" alt="itch.io link" width="60">
-								</a>
-							</td>
-							<td>
-								<a href="https://www.linkedin.com/in/nathaniel-wert-1275811a9/">
-									<img src="LinkedIn_logo_initials.png" alt="LinkedIn link" width="60">
-								</a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			</span>
-		</footer>
-	</body>
+			</footer>
+		</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
 </html>
